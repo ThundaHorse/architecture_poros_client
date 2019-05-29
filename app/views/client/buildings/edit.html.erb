@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-6 offset-md-3">
-    <%= form_tag "/client/buildings/building.id", method: :patch do %>
+    <%= form_tag "/client/buildings/#{@building.id}", method: :patch do %>
       <div class="form-group">
         <label for="InputName">Name</label>
         <input type="text" name="name" class="form-control" id="InputName" placeholder="ex. Willis Tower" value="<%= @building.name %>">
